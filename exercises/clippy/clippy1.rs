@@ -9,9 +9,10 @@
 // Execute `rustlings hint clippy1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+// I AM DONE
 
 use std::f32;
+use std::f32::consts::PI;
 
 fn main() {
     let pi =PI;

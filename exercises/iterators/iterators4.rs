@@ -3,9 +3,19 @@
 // Execute `rustlings hint iterators4` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+// I AM DONE
 
 pub fn factorial(num: u64) -> u64 {
+    let v:Vec<u64>=(1..=num).collect();
+    let sum:u64=v.iter().fold(1,|arr,x| arr*x);
+    sum
+    // let mut tmp:u64=num;
+    // let mut sum:u64=1;
+    // while tmp>1{
+    //     sum=sum*tmp;
+    //     tmp=tmp-1;
+    // }
+    // sum
     // Complete this function to return the factorial of num
     // Do not use:
     // - return

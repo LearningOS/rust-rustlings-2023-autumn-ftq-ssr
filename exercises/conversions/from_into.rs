@@ -45,7 +45,6 @@ impl Default for Person {
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
         let mut iter=s.split(',');
-        // if iter.len()<2 {return default();}
         let nm=iter.next();
         if nm==None||nm==Some("") {return Default::default();}
         let mut ag=iter.next();
